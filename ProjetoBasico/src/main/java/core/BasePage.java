@@ -178,7 +178,8 @@ public class BasePage {
 		
 		//clicar no botao da celula encontrada
 		WebElement celula = tabela.findElement(By.xpath(".//tr["+idLinha+"]/td["+idColunaBotao+"]"));
-		celula.findElement(By.xpath(".//input")).click();
+		//xpath tabela sr barriga antes estava .//input
+		celula.findElement(By.xpath(".//span")).click();
 		return celula;
 	}
 	
